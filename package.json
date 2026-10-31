@@ -1,32 +1,27 @@
 {
-  "name": "denkichi-site",
+  "name": "portofolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Personal homepage of Stefanus Mario Bersyuby, built with NestJS.",
+  "description": "Personal homepage of Stefanus Mario Bersyuby, built with Next.js.",
   "license": "UNLICENSED",
   "scripts": {
-    "compile": "nest build",
-    "dev": "PATH=/usr/local/n/versions/node/24.15.0/bin:$PATH PORT=3001 nest start --watch",
-    "start": "nest start",
-    "start:prod": "node dist/main.js",
+    "dev": "PATH=/usr/local/n/versions/node/24.15.0/bin:$PATH SITE_URL=http://localhost:3001 next dev --port 3001",
+    "build": "next build",
+    "start": "next start",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@nestjs/common": "^12.3.2",
-    "@nestjs/core": "^12.3.2",
-    "@nestjs/platform-express": "^12.3.2",
-    "@nestjs/serve-static": "^12.1.1",
-    "express": "^5.3.0",
-    "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.2"
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
   },
   "devDependencies": {
-    "@nestjs/cli": "^12.0.11",
-    "@types/express": "^5.0.6",
     "@types/node": "^24.0.0",
-    "typescript": "^6.0.3"
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^5.9.3"
   },
   "engines": {
-    "node": "24.x"
+    "node": ">=20.9.0"
   }
 }
